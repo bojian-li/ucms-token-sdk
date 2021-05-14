@@ -1,0 +1,26 @@
+{
+    "name": "ucms-token-sdk/ucms-token-sdk",
+    "description": "ucms 系统令牌生成",
+    "authors": [
+        {
+            "name": "bojian.li",
+            "email": "2236687676@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+
+    "require": {
+        "php": ">=7.0"
+    },
+
+    "require-dev": {
+        "phpunit/phpunit": "^8.0"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "ucmsTokenAdk\\": "src/"
+        }
+    },
+    "license": "MIT"
+}
