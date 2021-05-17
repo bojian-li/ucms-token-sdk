@@ -16,7 +16,7 @@ class UCmsTokenTest extends TestCase
 {
     public function testCreateToken() {
 
-        $result = UCmsToken::createToken();
+        $result = UCmsToken::createToken(1);
         $this->assertEquals($result, 'hello world.');
     }
 }
