@@ -38,6 +38,7 @@ class UCmsToken
             'type_id' => $typeId,
             'app_id' => $appId,
             'apr_id' => $aprId,
+            'created_at' => date('Y-m-d H:i:s', time())
         ];
     }
 
