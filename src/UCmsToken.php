@@ -28,8 +28,10 @@ class UCmsToken
     {
         //生成 uniqueid
         $uniqueid = self::createUniqueId($typeId, $appId, $aprId, $params);
+
         //生成 UCmsToken
         $xcode = self::createXcode($typeId);
+
         //组装返回数据
         return [
             'cms_code' => md5(sprintf('%s%s%s', $xcode, time(), $uniqueid)),
