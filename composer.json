@@ -1,5 +1,5 @@
 {
-    "name": "ucms-token-sdk/ucms-token-sdk",
+    "name": "ucms/token-sdk-php",
     "description": "ucms 系统令牌生成",
     "authors": [
         {
