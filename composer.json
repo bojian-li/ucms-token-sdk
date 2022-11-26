@@ -1,6 +1,13 @@
 {
     "name": "ucms/token-sdk-php",
     "description": "ucms 系统令牌生成",
+    "type": "library",
+    "license": "Apache-2.0",
+    "homepage": "https://github.com/bojian-li/ucms-token-sdk",
+    "keywords": [
+        "ucms-token",
+        "sdk"
+    ],
     "authors": [
         {
             "name": "bojian.li",
@@ -19,8 +26,24 @@
 
     "autoload": {
         "psr-4": {
-            "ucmsTokenAdk\\": "src/"
+            "\\": "src/"
+        },
+        "files": [
+            "src/functions.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
         }
     },
-    "license": "MIT"
+
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-ci": "vendor/bin/phpunit --coverage-text",
+        "travis": [
+            "composer phploc",
+            "composer phpstan"
+        ]
+    }
 }

@@ -7,7 +7,7 @@
  * @version 0.1
  */
 
-require_once(dirname(dirname(__FILE__)).'/src/UCmsToken.php');
+//require_once(dirname(dirname(__FILE__)).'/src/UCmsToken.php');
 
 use PHPUnit\Framework\TestCase;
 use UCmsSDK\UCmsToken;
